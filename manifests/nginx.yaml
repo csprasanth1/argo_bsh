@@ -11,7 +11,7 @@ spec:
   project: project-with-role
   source:
     repoURL: https://github.com/csprasanth1/argo_bsh.git
-    targetRevision: main
+    targetRevision: master
     path: manifests
   destination:
     server: https://kubernetes.default.svc
