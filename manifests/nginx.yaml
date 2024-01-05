@@ -3,14 +3,14 @@ kind: Application
 metadata:
   name: nginx
   namespace: argocd
-  annotations:
-    notifications.argoproj.io/subscribe.on-sync-running.teams: channelName
-    notifications.argoproj.io/subscribe.on-deployed.teams: channelName
-    notifications.argoproj.io/subscribe.on-health-degraded: channelName
+#  annotations:
+#    notifications.argoproj.io/subscribe.on-sync-running.teams: channelName
+#    notifications.argoproj.io/subscribe.on-deployed.teams: channelName
+#    notifications.argoproj.io/subscribe.on-health-degraded: channelName
 spec:
   project: project-with-role
   source:
-    repoURL: https://github.com/csprasanth1/argocd.git
+    repoURL: https://github.com/csprasanth1/argo_bsh.git
     targetRevision: main
     path: manifests
   destination:
