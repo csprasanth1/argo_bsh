@@ -8,13 +8,13 @@ metadata:
 #    notifications.argoproj.io/subscribe.on-deployed.teams: channelName
 #    notifications.argoproj.io/subscribe.on-health-degraded: channelName
 spec:
-  project: project-with-role
+  project: default
   source:
     repoURL: https://github.com/csprasanth1/argo_bsh.git
     targetRevision: master
     path: manifests
   destination:
-    server: https://kubernetes.default.svc
+    server: https://10.0.1.24:6443
     namespace: default
   syncPolicy:
     automated:
